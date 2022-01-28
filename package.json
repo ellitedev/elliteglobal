@@ -1,0 +1,14 @@
+{
+  "name": "elliteglobal",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "three": "^0.137.4"
+  }
+}

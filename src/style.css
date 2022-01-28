@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body,
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+main {
+    width: 100vw;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+main section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#landing {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#previous {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    grid-row: 2;
+
+}
+
+#previous .down {
+    grid-column: 3;
+}
+
+#previous .up {
+    grid-column: 3;
+}
+
+#video1 {
+    grid-column: 2;
+}
+
+#video2 {
+    grid-column: 4;
+}
+
+#upcoming {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+em {
+    color: white;
+}
+
+#logo {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#poster {
+    width: 100%;
+}
+
+.up {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.down {
+    grid-column: 2;
+    grid-row: 3;
+}
