@@ -4,7 +4,7 @@ import album from 'url:./album.obj';
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 50);
 
 var myObj;
 const objloader = new OBJLoader();
@@ -43,7 +43,7 @@ scene.add(sphere);
 const boxgeometry = new THREE.BoxGeometry(1, 1, 1);
 const boxmaterial = new THREE.MeshBasicMaterial({ color: 0x424242, wireframe: true });
 const cube = new THREE.Mesh(boxgeometry, boxmaterial);
-cube.position.set(0, 0, -80);
+cube.position.set(0, 0, -110);
 cube.scale.set(0, 0, 0);
 scene.add(cube);
 
