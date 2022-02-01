@@ -55,6 +55,10 @@ main section {
     align-items: center;
 }
 
+#previous .item {
+    grid-row: 2;
+}
+
 #previous .down {
     grid-column: 3;
 }
@@ -166,6 +170,30 @@ iframe {
 
 #sssospinpanel {
     background-image: url(./sssopanel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#obsguide {
+    background-image: url(./obsguide.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#fuckyoutoo {
+    background-image: url(./fuckyoutoo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#playmore {
+    background-image: url(./playmore.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#barelyvisible {
+    background-image: url(./barelyvisible.png);
     background-size: cover;
     background-position: center;
 }

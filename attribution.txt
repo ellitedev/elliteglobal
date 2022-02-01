@@ -1,3 +1,4 @@
 Models used: 
 https://sketchfab.com/3d-models/cdj-player-3dc5d502413c41ac97eaa871deb32e9b
 https://sketchfab.com/3d-models/vinyl-record-with-custom-album-0e246c720b3648759cc60e8e8877ec29
+https://sketchfab.com/3d-models/floppy-disk-d09ab2ff777d4f6c91533253ae9af72a

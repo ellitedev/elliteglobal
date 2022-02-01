@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import album from 'url:./album.obj';
+import floppy from 'url:./file.obj';
 
 const scene = new THREE.Scene();
 
@@ -18,6 +19,19 @@ objloader.load(album, function (object) { //load the obj file
   );
   scene.add(object);
   object.position.set(0, 0, -60);
+  object.scale.set(0, 0, 0);
+});
+var floppyObj;
+objloader.load(floppy, function (object) { //load the obj file
+  floppyObj = object;
+  object.traverse(function (child) {
+    if (child instanceof THREE.Mesh) {
+      child.material.wireframe = true;
+    }
+  }
+  );
+  scene.add(object);
+  object.position.set(0, 0, -110);
   object.scale.set(0, 0, 0);
 });
 
@@ -40,19 +54,12 @@ const sphere = new THREE.Mesh(geometry, material);
 sphere.position.set(0, 0, -30);
 scene.add(sphere);
 
-const boxgeometry = new THREE.BoxGeometry(1, 1, 1);
-const boxmaterial = new THREE.MeshBasicMaterial({ color: 0x424242, wireframe: true });
-const cube = new THREE.Mesh(boxgeometry, boxmaterial);
-cube.position.set(0, 0, -110);
-cube.scale.set(0, 0, 0);
-scene.add(cube);
-
 function moveCamera(e) {
   const t = document.body.getBoundingClientRect().top;
   camera.position.z = t * 0.025;
-  cube.scale.x = t * 0.0005;
-  cube.scale.y = t * 0.0025;
-  cube.scale.z = t * 0.0025;
+  floppyObj.scale.x = t * 0.00005;
+  floppyObj.scale.y = t * 0.00005;
+  floppyObj.scale.z = t * 0.00005;
   myObj.scale.x = t * 0.0025;
   myObj.scale.y = t * 0.0025;
   myObj.scale.z = t * 0.0025;
@@ -76,8 +83,8 @@ function animate() {
   requestAnimationFrame(animate);
   sphere.rotation.x += 0.005;
   sphere.rotation.y += 0.005;
-  cube.rotation.x += 0.005;
-  cube.rotation.y += 0.005;
+  floppyObj.rotation.x += 0.005;
+  floppyObj.rotation.y += 0.005;
   myObj.rotation.x += 0.005;
   myObj.rotation.y += 0.005;
   renderer.render(scene, camera);
