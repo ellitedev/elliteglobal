@@ -69,6 +69,9 @@ main section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 iframe {
@@ -109,10 +112,16 @@ iframe {
 
 #contact .container .item {
     grid-column: 2;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
     width: 120%;
+    height: 100%;
+}
+
+.item:hover {
+    height: 120%;
+}
+
+#contact .container .item:hover {
+    height: 120%;
 }
 
 #work .up {
@@ -182,6 +191,10 @@ iframe {
     align-items: center;
 }
 
+#contact .container {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -201,12 +214,12 @@ em {
     grid-row: 2;
 }
 
-.up {
+#landing .up {
     grid-column: 2;
     grid-row: 1;
 }
 
-.down {
+#landing .down {
     grid-column: 2;
     grid-row: 3;
 }
