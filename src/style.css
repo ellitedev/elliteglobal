@@ -76,27 +76,7 @@ iframe {
     height: 100%;
 }
 
-#item {
-    background-color: rgba(0, 0, 0, 0.356);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    font-size: 1.5rem;
-    font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
-    font-style: italic;
-    color: #fff
-}
+
 
 #upcoming {
     display: grid;
@@ -114,23 +94,90 @@ iframe {
     grid-column: 3;
 }
 
-#upcoming .container #item {
+#contact .up {
+    grid-column: 3;
+}
+
+#contact .down {
+    grid-column: 3;
+}
+
+#upcoming .container .item {
     grid-column: 2;
     grid-row: 2;
 }
 
+#contact .container .item {
+    grid-column: 2;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    width: 120%;
+}
+
+#work .up {
+    grid-column: 3;
+}
+
+#work .down {
+    grid-column: 3;
+}
+
 #work {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
     justify-items: center;
     align-items: center;
 }
 
+#spinshare {
+    background-image: url(./spinshare.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#project1 {
+    background-image: url(./project1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#scrumboomer {
+    background-image: url(./ScrumBoomer.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#mapbot {
+    background-image: url(./mapbot.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#sssospinpanel {
+    background-image: url(./sssopanel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#itemtext {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+#placeholder {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #contact {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
     justify-items: center;
     align-items: center;
 }
@@ -154,10 +201,6 @@ em {
     grid-row: 2;
 }
 
-#poster {
-    width: 100%;
-}
-
 .up {
     grid-column: 2;
     grid-row: 1;
@@ -166,4 +209,27 @@ em {
 .down {
     grid-column: 2;
     grid-row: 3;
+}
+
+.item {
+    background-color: rgba(0, 0, 0, 0.356);
+    display: grid;
+    font-size: 1.5rem;
+    height: 20vh;
+    width: 25vw;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-style: italic;
+    color: #fff
 }
