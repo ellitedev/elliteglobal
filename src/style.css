@@ -5,6 +5,15 @@
     border: 0;
 }
 
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -67,6 +76,19 @@ main section {
     grid-column: 3;
 }
 
+.up,
+.down {
+    transition: all 0.1s ease-in-out;
+}
+
+.down:hover {
+    margin-top: .5em;
+}
+
+.up:hover {
+    margin-bottom: .5em;
+}
+
 .container {
     width: 100%;
     grid-column: 2/5;
@@ -82,8 +104,6 @@ iframe {
     width: 100%;
     height: 100%;
 }
-
-
 
 #upcoming {
     display: grid;
@@ -120,12 +140,17 @@ iframe {
     height: 100%;
 }
 
-.item:hover {
-    height: 120%;
+#work .container .item:hover {
+    height: 110%;
+    width: 110%;
+}
+
+#previous .container .item:hover {
+    height: 130%;
 }
 
 #contact .container .item:hover {
-    height: 120%;
+    letter-spacing: .1em;
 }
 
 #work .up {
@@ -236,6 +261,15 @@ em {
     color: white;
 }
 
+.email {
+    display: inline-block;
+    transition: all 0.1s ease-in-out;
+}
+
+.email:hover {
+    letter-spacing: .1em;
+}
+
 #logo {
     width: 100%;
     grid-column: 2;
@@ -272,5 +306,6 @@ em {
         "Helvetica Neue",
         sans-serif;
     font-style: italic;
-    color: #fff
+    color: #fff;
+    transition: all 0.1s ease-in-out;
 }
