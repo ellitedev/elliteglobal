@@ -11,5 +11,5 @@ run `yarn build`
 
 
 ### 3d models used
-[^1]: [Vinyl Record with Custom Album](https://sketchfab.com/3d-models/vinyl-record-with-custom-album-0e246c720b3648759cc60e8e8877ec29)
-[^2]: [Floppy Disk](https://sketchfab.com/3d-models/floppy-disk-d09ab2ff777d4f6c91533253ae9af72a)
+1. [Vinyl Record with Custom Album](https://sketchfab.com/3d-models/vinyl-record-with-custom-album-0e246c720b3648759cc60e8e8877ec29)
+2. [Floppy Disk](https://sketchfab.com/3d-models/floppy-disk-d09ab2ff777d4f6c91533253ae9af72a)
