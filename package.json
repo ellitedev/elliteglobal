@@ -8,7 +8,8 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "@parcel/transformer-webmanifest": "^2.2.1",
+    "parcel": "^2.3.0"
   },
   "dependencies": {
     "three": "^0.137.4"
