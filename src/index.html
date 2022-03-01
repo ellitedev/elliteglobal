@@ -39,6 +39,21 @@
 <body>
   <canvas id="bg"></canvas>
   <main>
+    <a href="javascript:void(0)" class="opennav fas fa-bars" onclick="openNav()"></a>
+    <div id="mySidenav" class="sidenav">
+      <h1>Content</h1>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#landing">Home</a>
+      <a href="#previous">Previous</br>Performances</a>
+      <a href="#upcoming">Upcoming</br>Performances</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <h1>Handy</br>Links</h1>
+      <a href="https://mail.ellite.dev/SOGo/" target="blank">E-Mail</a>
+      <a href="https://nextcloud.ellite.dev/" target="blank">Nextcloud</a>
+      <a href="https://rancher.ellite.dev:8443/" target="blank">Rancher</a>
+      <a href="https://mail.ellite.dev/" target="blank">Mail</br>Admin</a>
+    </div>
     <section id="landing">
       <img id="logo" src="./ELLITE LOGOTYPE V2_1 WHITE.svg" alt="Ellite Logo">
       <a class="down" href="#previous">
@@ -132,6 +147,7 @@
       </a>
     </section>
   </main>
+  <script src="./sidenav.js"></script>
   <script type="module" src="./main.js"></script>
 
   <!-- Models used:  
