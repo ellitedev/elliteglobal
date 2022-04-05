@@ -26,7 +26,7 @@
     background: #555;
 }
 
-/* The side navigation menu */
+/* The side naigation menu */
 .sidenav {
     height: 100%;
     /* 100% Full-height */
@@ -159,28 +159,17 @@ canvas {
     left: 0;
 }
 
-body,
-html {
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-}
-
 main {
     width: 100vw;
     z-index: 99;
     position: absolute;
     width: 100%;
     overflow-x: hidden;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
 }
 
 main section {
     width: 100vw;
     height: 100vh;
-    scroll-snap-align: start;
 }
 
 #landing {
@@ -193,22 +182,18 @@ main section {
 
 #previous {
     display: grid;
-    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
-    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 3fr 7fr 3fr;
     justify-items: center;
     align-items: center;
 }
 
-#previous .item {
-    grid-row: 2;
-}
-
 #previous .down {
-    grid-column: 3;
+    grid-column: 2;
 }
 
 #previous .up {
-    grid-column: 3;
+    grid-column: 2;
 }
 
 .up,
@@ -217,11 +202,18 @@ main section {
 }
 
 .down:hover {
-    margin-top: .5em;
+    padding-top: 1em;
 }
 
 .up:hover {
-    margin-bottom: .5em;
+    padding-bottom: 1em;
+}
+
+#previous .container {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 .container {
@@ -234,6 +226,13 @@ main section {
     align-items: center;
     justify-content: center;
 }
+
+#flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 
 iframe {
     width: 100%;
@@ -264,6 +263,10 @@ iframe {
     grid-column: 3;
 }
 
+#previous .container .item {
+    width: 100%;
+}
+
 #upcoming .container .item {
     grid-column: 2;
     grid-row: 2;
@@ -278,10 +281,6 @@ iframe {
 #work .container .item:hover {
     height: 110%;
     width: 110%;
-}
-
-#previous .container .item:hover {
-    height: 130%;
 }
 
 #contact .container .item:hover {
