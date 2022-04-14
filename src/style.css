@@ -3,30 +3,34 @@
     padding: 0;
     box-sizing: border-box;
     border: 0;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
 }
 
-
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #000;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #424242;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-/* The side naigation menu */
 .sidenav {
     height: 100%;
     /* 100% Full-height */
@@ -49,7 +53,6 @@
     /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
 .sidenav a {
     padding: 4px 8px 0px 32px;
     text-decoration: none;
@@ -88,13 +91,11 @@
     ;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: white;
     letter-spacing: .1em;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -103,13 +104,6 @@
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -140,7 +134,6 @@
     width: 2.3em;
 }
 
-
 img {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -160,226 +153,13 @@ canvas {
 }
 
 main {
-    width: 100vw;
-    z-index: 99;
     position: absolute;
     width: 100%;
-    overflow-x: hidden;
 }
-
-main section {
-    width: 100vw;
-    height: 100vh;
-}
-
-#landing {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 7fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-#previous {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 3fr 7fr 3fr;
-    justify-items: center;
-    align-items: center;
-}
-
-#previous .down {
-    grid-column: 2;
-}
-
-#previous .up {
-    grid-column: 2;
-}
-
-.up,
-.down {
-    transition: all 0.1s ease-in-out;
-}
-
-.down:hover {
-    padding-top: 1em;
-}
-
-.up:hover {
-    padding-bottom: 1em;
-}
-
-#previous .container {
-    display: grid;
-    grid-column: 2;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-.container {
-    width: 100%;
-    grid-column: 2/5;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 
 iframe {
     width: 100%;
     height: 100%;
-}
-
-#upcoming {
-    display: grid;
-    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
-    grid-template-rows: 1fr 7fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-#upcoming .up {
-    grid-column: 3;
-}
-
-#upcoming .down {
-    grid-column: 3;
-}
-
-#contact .up {
-    grid-column: 3;
-}
-
-#contact .down {
-    grid-column: 3;
-}
-
-#previous .container .item {
-    width: 100%;
-}
-
-#upcoming .container .item {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#contact .container .item {
-    grid-column: 2;
-    width: 120%;
-    height: 100%;
-}
-
-#work .container .item:hover {
-    height: 110%;
-    width: 110%;
-}
-
-#contact .container .item:hover {
-    letter-spacing: .1em;
-}
-
-#work .up {
-    grid-column: 3;
-}
-
-#work .down {
-    grid-column: 3;
-}
-
-#work {
-    display: grid;
-    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
-    grid-template-rows: 1fr 7fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-#spinshare {
-    background-image: url(./spinshare.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#project1 {
-    background-image: url(./project1.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#scrumboomer {
-    background-image: url(./ScrumBoomer.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#mapbot {
-    background-image: url(./mapbot.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#sssospinpanel {
-    background-image: url(./sssopanel.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#obsguide {
-    background-image: url(./obsguide.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#fuckyoutoo {
-    background-image: url(./fuckyoutoo.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#playmore {
-    background-image: url(./playmore.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#barelyvisible {
-    background-image: url(./barelyvisible.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#itemtext {
-    height: 1.5em;
-    background-color: rgba(0, 0, 0, 0.37);
-    text-align: center;
-}
-
-#placeholder {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#contact {
-    display: grid;
-    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
-    grid-template-rows: 1fr 7fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-#contact .container {
-    text-align: center;
 }
 
 a {
@@ -395,51 +175,223 @@ em {
     color: white;
 }
 
-.email {
-    display: inline-block;
-    transition: all 0.1s ease-in-out;
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.email:hover {
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    width: 70%;
+}
+
+.content {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.posters {
+    height: 600px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+}
+
+div.item {
+    position: absolute;
+    width: 20em;
+    height: 28em;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s ease-in-out;
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+div.item:nth-of-type(1) {
+    --offset: 1;
+    background-image: url(./OTB_Poster_A2.png);
+
+}
+
+div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #ff70a6;
+}
+
+input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(1):checked~main#carousel {
+    --position: 1;
+}
+
+input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(2):checked~main#carousel {
+    --position: 2;
+}
+
+#previous .content iframe {
+    width: 60%;
+    height: 20%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+
+#work .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#work .content .item {
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #ff70a6;
+    border-radius: 1em;
+    transition: all 0.2s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+#work .content .item h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 15%;
+}
+
+#work .content .item:nth-child(1) {
+    background-image: url(./fuckyoutoo.jpg);
+}
+
+#work .content .item:nth-child(2) {
+    background-image: url(./mapbot.png);
+}
+
+#work .content .item:nth-child(3) {
+    background-image: url(./barelyvisible.png);
+}
+
+#work .content .item:nth-child(4) {
+    background-image: url(./obsguide.png);
+}
+
+#work .content .item:nth-child(5) {
+    background-image: url(./playmore.png);
+}
+
+#work .content .item:nth-child(6) {
+    background-image: url(./project1.png);
+}
+
+#work .content .item:nth-child(7) {
+    background-image: url(./ScrumBoomer.png);
+}
+
+#work .content .item:nth-child(8) {
+    background-image: url(./spinshare.jpg);
+}
+
+#work .content .item:nth-child(9) {
+    background-image: url(./sssopanel.jpg);
+}
+
+
+#work .content .item:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#contact .content li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+#contact .content li:hover {
     letter-spacing: .1em;
 }
 
-#logo {
-    width: 100%;
-    grid-column: 2;
-    grid-row: 2;
+
+.down {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
 }
 
-#landing .up {
-    grid-column: 2;
-    grid-row: 1;
+.up {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
 }
 
-#landing .down {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.item {
-    background-color: rgba(0, 0, 0, 0.356);
-    display: grid;
-    font-size: 1.5rem;
-    height: 20vh;
-    width: 25vw;
-    margin-top: .5vh;
-    margin-bottom: .5vh;
-    font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
-    font-style: italic;
-    color: #fff;
-    transition: all 0.1s ease-in-out;
+#house {
+    font-size: .85em;
 }

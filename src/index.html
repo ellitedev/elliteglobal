@@ -35,128 +35,111 @@
   <link rel="stylesheet" href="./style.css" />
   <script src="https://kit.fontawesome.com/87eb0e918c.js" crossorigin="anonymous"></script>
 </head>
+<canvas id="bg"></canvas>
 
 <body>
-  <canvas id="bg"></canvas>
   <main>
     <a href="javascript:void(0)" class="opennav fas fa-bars" onclick="openNav()"></a>
     <div id="mySidenav" class="sidenav">
       <h1>Content</h1>
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#landing">Home</a>
+      <a href="#">Home</a>
       <a href="#previous">Previous</br>Performances</a>
       <a href="#upcoming">Upcoming</br>Performances</a>
       <a href="#work">Work</a>
       <a href="#contact">Contact</a>
       <h1>Handy</br>Links</h1>
-      <a href="https://mail.ellite.dev/SOGo/" target="blank">E-Mail</a>
+      <a href="https://mail.ellite.dev/SOGo/" target="blank">Email</a>
       <a href="https://nextcloud.ellite.dev/" target="blank">Nextcloud</a>
-      <a href="https://portainer.ellite.dev:8443/" target="blank">Portainer</a>
+      <a href="https://portainer.ellite.dev/" target="blank">Portainer</a>
       <a href="https://traefik.ellite.dev/" target="blank">Traefik</a>
       <a href="https://mail.ellite.dev/" target="blank">Mail</br>Admin</a>
       <a href="https://app.plex.tv/" target="blank">Plex</a>
     </div>
-    <section id="landing">
-      <img id="logo" src="./ELLITE LOGOTYPE V2_1 WHITE.svg" alt="Ellite Logo">
-      <a class="down" href="#previous">
-        <em class="fas fa-chevron-down"></em>
-      </a>
-    </section>
-    <section id="previous">
-      <a class="up" href="#landing">
-        <em class="fas fa-chevron-up"></em>
-      </a>
-
-      <div class="container" id="flex">
-        <div class="item"><iframe id="video1" allow="fullscreen;"
-            src="https://www.youtube.com/embed/oCE9ypIqun4"></iframe></div>
-        <div class="item"><iframe id="video2" allow="fullscreen;"
-            src="https://www.youtube.com/embed/gxC4ZOHbbnc"></iframe></div>
-        <div class="item"><iframe id="video3" allow="fullscreen;"
-            src="https://www.youtube.com/embed/Ot_uUmdqzlE"></iframe></div>
-        <div class="item"><iframe id="video4" allow="fullscreen;"
-            src="https://www.youtube.com/embed/s6vkZqfpG8M"></iframe></div>
-      </div>
-
-      <a class="down" href="#upcoming">
-        <em class="fas fa-chevron-down"></em>
-      </a>
-    </section>
-    <section id="upcoming">
-      <a class="up" href="#previous">
-        <em class="fas fa-chevron-up"></em>
-      </a>
-
-      <div class="container">
-        <div class="item" id="itemtext">I AM OPEN FOR BOOKING</br>
-          <p>SEND ME AN <a href="#contact"><u class="email">EMAIL</u></p>
+    <content>
+      <section id="home">
+        <div class="up"></div>
+        <div class="content"><img src="./ELLITE LOGOTYPE V2_1 WHITE.svg" alt="Ellite Logo"></div>
+        <div class="down"><a href="#previous" class="fas fa-chevron-down"></a></div>
+      </section>
+      <section id="previous">
+        <div class="up"><a href="#" class="fas fa-chevron-up"></a></div>
+        <div class="content">
+          <iframe src="https://www.youtube.com/embed/s6vkZqfpG8M?start=1" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/Ot_uUmdqzlE?start=1" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/oCE9ypIqun4?start=1" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/gxC4ZOHbbnc?start=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="down"><a href="#upcoming" class="fas fa-chevron-down"></a></div>
+      </section>
+      <section id="upcoming">
+        <div class="up"><a href="#previous" class="fas fa-chevron-up"></a></div>
+        <div class="content">
+          <div class="posters">
+            <!-- <input type="radio" name="position" checked />
+            <input type="radio" name="position" /> -->
+            <main id="carousel">
+              <div class="item"></div>
+              <!-- <div class="item"></div> -->
+              <main>
+          </div>
+        </div>
+        <div class="down"><a href="#work" class="fas fa-chevron-down"></a></div>
+      </section>
+      <section id="work">
+        <div class="up"><a href="#upcoming" class="fas fa-chevron-up"></a></div>
+        <div class="content">
+          <a href="https://fuckyoutoo.ellite.dev/" target="blank" class="item">
+            <h1>F██KYOUTOO Photos</h1>
+          </a>
+          <a href="https://github.com/ellitedev/speenmapbot/" target="blank" class="item">
+            <h1>MapBot</h1>
+          </a>
+          <a href="https://barelyvisible.ellite.dev/" target="blank" class="item">
+            <h1>Barely Visible</h1>
+          </a>
+          <a href="https://obsguide.ellite.dev/" target="blank" class="item">
+            <h1>SSSO OBS Guide</h1>
+          </a>
+          <a href="https://playmore.ellite.dev/" target="blank" class="item">
+            <h1>Play More</h1>
+          </a>
+          <a href="https://tia4v1cp1.ellite.dev/" target="blank" class="item">
+            <h1>School Project 1</h1>
+          </a>
+          <a href="https://scrumboomer.ellite.dev/" target="blank" class="item">
+            <h1>Scrum Boomer</h1>
+          </a>
+          <a href="https://spinsha.re/" target="blank" class="item">
+            <h1>SpinShare</h1>
+          </a>
+          <a href="https://github.com/SpinShare/spinshare-sssopanel" target="blank" class="item">
+            <h1>SSSO SpinPanel</h1>
           </a>
         </div>
-      </div>
-
-      <a class="down" href="#work">
-        <em class="fas fa-chevron-down"></em>
-      </a>
-    </section>
-    <section id="work">
-      <a class="up" href="#upcoming">
-        <em class="fas fa-chevron-up"></em>
-      </a>
-
-      <div class="container">
-        <a href="https://spinsha.re/" target="_blank" id="spinshare" class="item">
-          <p id="itemtext">SpinShare</p>
-        </a>
-        <a href="https://tia4v1cp1.ellite.dev/" target="_blank" id="project1" class="item">
-          <p id="itemtext">Project Week 1</p>
-        </a>
-        <a href="https://scrumboomer.ellite.dev/" target="_blank" id="scrumboomer" class="item">
-          <p id="itemtext">Scrum Boomer</p>
-        </a>
-        <a href="https://github.com/ellitedev/speenmapbot/" target="_blank" id="mapbot" class="item">
-          <p id="itemtext">MapBot</p>
-        </a>
-        <a href="https://github.com/SpinShare/spinshare-sssopanel" target="_blank" id="sssospinpanel" class="item">
-          <p id="itemtext">SSSO SpinPanel</p>
-        </a>
-        <a href="https://obsguide.ellite.dev/" target="_blank" id="obsguide" class="item">
-          <p id="itemtext">OBS Guide</p>
-        </a>
-        <a href="https://fuckyoutoo.ellite.dev/" target="_blank" id="fuckyoutoo" class="item">
-          <p id="itemtext">F**K YOU TOO</p>
-        </a>
-        <a href="https://playmore.ellite.dev/" target="_blank" id="playmore" class="item">
-          <p id="itemtext">Playmore</p>
-        </a>
-        <a href="https://barelyvisible.ellite.dev/" target="_blank" id="barelyvisible" class="item">
-          <p id="itemtext">Barely Visible</p>
-        </a>
-      </div>
-
-      <a class="down" href="#contact">
-        <em class="fas fa-chevron-down"></em>
-      </a>
-    </section>
-    <section id="contact">
-      <a class="up" href="#work">
-        <em class="fas fa-chevron-up"></em>
-      </a>
-
-      <div class="container">
-        <a href="https://github.com/ellitedev" target="_blank" class="item">GitHub</a>
-        <a href="https://twitter.com/ellitedev" target="_blank" class="item">Twitter</a>
-        <a href="https://patreon.com/ellite" target="_blank" class="item">Patreon</a>
-        <a href="mailto:ellitemgmt@ellite.dev" target="_blank" class="item">ellitemgmt@ellite.dev</a>
-      </div>
-
-      <a class="down" href="#">
-        <em class="fas fa-home"></em>
-      </a>
-    </section>
+        <div class="down"><a href="#contact" class="fas fa-chevron-down"></a></div>
+      </section>
+      <section id="contact">
+        <div class="up"><a href="#work" class="fas fa-chevron-up"></a></div>
+        <div class="content">
+          <ul>
+            <li>
+              <a href="https://twitter.com/ellitedev" target="blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com/ellitedev" target="blank">GitHub</a>
+            </li>
+            <li>
+              <a href="mailto:ellitemgmt@ellite.dev">ellitemgmt@ellite.dev</a>
+            </li>
+          </ul>
+        </div>
+        <div class="down"><a href="#" id="house" class="fas fa-home"></a></div>
+      </section>
+    </content>
   </main>
   <script src="./sidenav.js"></script>
   <script type="module" src="./main.js"></script>
-
   <!-- Models used:  
     https://sketchfab.com/3d-models/cdj-player-3dc5d502413c41ac97eaa871deb32e9b
     https://sketchfab.com/3d-models/vinyl-record-with-custom-album-0e246c720b3648759cc60e8e8877ec29
