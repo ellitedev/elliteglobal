@@ -192,6 +192,7 @@ section {
 }
 
 .content {
+    max-height: 90%;
     height: 90%;
     width: 100%;
     display: flex;
@@ -243,13 +244,13 @@ div.item {
 
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-image: url(./OTB_Poster_A2.png);
+    background-image: url(./KYUUB422.png);
 
 }
 
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-color: #ff70a6;
+    background-image: url(./OTB_Poster_A2.png);
 }
 
 input:nth-of-type(1) {
@@ -284,11 +285,16 @@ input:nth-of-type(2):checked~main#carousel {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-shrink: 1;
+
 }
 
 #work .content .item {
-    width: 30%;
-    height: 30%;
+    min-width: max-content;
+    min-height: 1em;
+    max-height: 10em;
+    width: 20%;
+    height: 20%;
     margin: 1%;
     display: flex;
     flex-direction: column;
