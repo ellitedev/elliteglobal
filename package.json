@@ -12,6 +12,7 @@
     "parcel": "^2.3.0"
   },
   "dependencies": {
+    "ovenplayer": "^0.10.21",
     "three": "^0.137.4"
   }
 }

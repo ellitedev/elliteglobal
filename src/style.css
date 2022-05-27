@@ -211,6 +211,13 @@ section {
     justify-items: center;
 }
 
+.player-wrapper {
+    margin: 0 auto;
+    width: 70%;
+    max-height: 90%;
+    
+}
+
 main#carousel {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
