@@ -76,13 +76,17 @@
       <section id="upcoming">
         <div class="up"><a href="#previous" class="fas fa-chevron-up"></a></div>
         <div class="content">
-          <div class="posters">
-            <!-- <input type="radio" name="position" checked /> -->
-            <!-- <input type="radio" name="position" /> -->
+          <!-- <div class="posters">
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
             <main id="carousel">
               <div class="item"></div>
-              <!-- <div class="item"></div> -->
+              <div class="item"></div>
               <main>
+          </div> -->
+          <div class="not_booked">
+              <p id="itemtext">I AM OPEN FOR BOOKING</p>
+                <p>SEND ME AN <a href="#contact"><u>EMAIL</u></a></p>
           </div>
         </div>
         <div class="down"><a href="#work" class="fas fa-chevron-down"></a></div>
@@ -131,23 +135,23 @@
               <a href="https://github.com/ellitedev" target="blank">GitHub</a>
             </li>
             <li>
-              <a href="mailto:ellitemgmt@ellite.dev">ellitemgmt@ellite.dev</a>
+              <a href="mailto:mgmt@ellite.dev">mgmt@ellite.dev</a>
             </li>
           </ul>
         </div>
-        <div class="down"><a href="#streamplayer" class="fas fa-chevron-down"></a></div>
+        <!-- <div class="down"><a href="#streamplayer" class="fas fa-chevron-down"></a></div> -->
       </section>
-      <section id="streamplayer">
-        <div class="up"><a href="#contact" class="fas fa-chevron-up"></a></div>
-        <div class="content">
+      <!-- <section id="streamplayer"> -->
+        <!-- <div class="up"><a href="#contact" class="fas fa-chevron-up"></a></div> -->
+        <!-- <div class="content"> -->
           <!-- Wrapper element for sizing or positioning the player -->
-          <div class="player-wrapper">
+          <!-- <div class="player-wrapper"> -->
             <!-- OvenPlayer will be initialized inside this element. -->
-            <div id="player_id"></div>
-          </div>
-        </div>
-        <div class="down"><a href="#" id="house" class="fas fa-home"></a></div>
-      </section>
+            <!-- <div id="player_id"></div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="down"><a href="#" id="house" class="fas fa-home"></a></div> -->
+      <!-- </section> -->
     </content>
   </main>
   <script src="./sidenav.js"></script>
@@ -172,9 +176,7 @@
                   type: 'webrtc',
                   file: 'ws://144.91.95.225:3333/ssso/test?transport=tcp'
               }
-          ],
-          // Set the AD tag URL
-          adTagUrl: "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator="
+          ]
       });
   </script>
   <script type="module" src="./main.js"></script>

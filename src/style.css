@@ -257,7 +257,8 @@ div.item:nth-of-type(1) {
 
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-image: url();
+    background-image: url(./RUSK_POPUP.png);
+
 }
 
 input:nth-of-type(1) {
@@ -285,6 +286,28 @@ input:nth-of-type(2):checked~main#carousel {
     padding-bottom: .5em;
 }
 
+#upcoming .content p {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+#upcoming .content p a:hover {
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.1);
+}
+
+#upcoming .content p a:hover {
+    letter-spacing: .1em;
+}
 
 #work .content {
     display: flex;
@@ -293,7 +316,6 @@ input:nth-of-type(2):checked~main#carousel {
     align-items: center;
     flex-wrap: wrap;
     flex-shrink: 1;
-
 }
 
 #work .content .item {
